@@ -16,6 +16,23 @@ const toTop = document.getElementById("to-top");
 const avatarVideo = document.getElementById("avatar-video");
 const avatarCanvas = document.getElementById("avatar-canvas");
 
+// Clean any leftover noload in URL (query or path)
+(() => {
+  try {
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("noload")) {
+      url.searchParams.delete("noload");
+      window.history.replaceState({}, document.title, url.toString());
+    }
+    if (url.pathname.includes("/noload=1")) {
+      url.pathname = url.pathname.replace("/noload=1", "");
+      window.history.replaceState({}, document.title, url.toString());
+    }
+  } catch {
+    // ignore
+  }
+})();
+
 const onScroll = () => {
   if (header) {
     header.classList.toggle("scrolled", window.scrollY > 30);

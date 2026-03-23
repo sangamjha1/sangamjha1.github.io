@@ -28,6 +28,11 @@ const avatarCanvas = document.getElementById("avatar-canvas");
       url.pathname = url.pathname.replace("/noload=1", "");
       window.history.replaceState({}, document.title, url.toString());
     }
+    // Clean #home hash on refresh for a clean root URL
+    if (url.hash === "#home") {
+      url.hash = "";
+      window.history.replaceState({}, document.title, url.toString());
+    }
   } catch {
     // ignore
   }

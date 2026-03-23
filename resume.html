@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sangam Jha | Resume</title>
+  <meta name="description" content="Resume of Sangam Jha" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="resume-page">
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-text"><span class="brand-initial">S</span>angam Jha</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#education">Career</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="cta" href="assets/Sangam_Jha_Resume.pdf" target="_blank" rel="noreferrer">Download</a>
+      <a class="btn ghost" id="back-home" href="index.html?noload=1#home">← Back</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="row" id="resume">
+      <div class="row-header">
+        <h2>Resume</h2>
+      </div>
+      <div class="split">
+        <div>
+          <p>Here’s a clean PDF preview of my resume, plus download options.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="assets/Sangam_Jha_Resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+            <a class="btn primary" href="assets/Sangam_Jha_Resume.docx" target="_blank" rel="noreferrer">Download DOCX</a>
+          </div>
+        </div>
+        <div class="now-card">
+          <p class="eyebrow">Quick Info</p>
+          <h3>Computer Engineering • PDEU</h3>
+          <p>AI, data science, and full-stack development focus.</p>
+        </div>
+      </div>
+      <div class="resume-viewer">
+        <object data="assets/Sangam_Jha_Resume.pdf#toolbar=0&navpanes=0&view=FitH&zoom=page-width" type="application/pdf">
+          <p>PDF preview not supported in this browser. You can <a href="assets/Sangam_Jha_Resume.pdf" target="_blank" rel="noreferrer">download the PDF</a>.</p>
+        </object>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024 Sangam Jha. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const backHome = document.getElementById('back-home');
+    if (backHome) {
+      backHome.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'index.html?noload=1#home';
+      });
+    }
+  </script>
+</body>
+</html>

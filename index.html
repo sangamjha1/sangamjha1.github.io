@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sangam Jha | Netflix-Style Portfolio</title>
+  <meta name="description" content="Sangam Jha — Computer Engineering student focused on software development, data science, and AI." />
+  <meta property="og:title" content="Sangam Jha | Portfolio" />
+  <meta property="og:description" content="Computer Engineering student passionate about AI, data science, and full-stack development." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div class="loader" id="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="netflix-container">
+        <div class="sangam-logo" aria-label="SANGAM" role="img">
+          <span class="logo-letter">S</span>
+          <span class="logo-letter">A</span>
+          <span class="logo-letter">N</span>
+          <span class="logo-letter">G</span>
+          <span class="logo-letter">A</span>
+          <span class="logo-letter">M</span>
+        </div>
+      </div>
+      <p class="loader-text">Streaming Portfolio</p>
+    </div>
+  </div>
+
+  <div class="scroll-progress"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-text"><span class="brand-initial">S</span>angam Jha</span>
+    </div>
+    <nav class="site-nav">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Career</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cta" href="#contact">Let’s Connect</a>
+  </header>
+
+  <aside class="social-rail" aria-label="Social links">
+    <a href="https://www.linkedin.com/in/sangamjha" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM0.5 8.5H4.5V23H0.5V8.5ZM8.5 8.5H12.3V10.4H12.4C12.9 9.4 14.2 8.3 16.2 8.3 20.3 8.3 21 10.9 21 14.3V23H17V14.9C17 12.9 16.9 10.3 14.2 10.3 11.4 10.3 11 12.5 11 14.7V23H7V8.5H8.5Z"/>
+      </svg>
+    </a>
+    <a href="https://www.github.com/sangamjha1" target="_blank" rel="noreferrer" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 0.5C5.6 0.5 0.5 5.8 0.5 12.3c0 5.2 3.3 9.6 7.9 11.1.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4 1 0 2 .1 2.9.4 2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.9 7.9-11.1C23.5 5.8 18.4 0.5 12 0.5Z"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/sangamjha.1" target="_blank" rel="noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm6.2-3.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+      </svg>
+    </a>
+    <a href="https://x.com/sangamjha_1" target="_blank" rel="noreferrer" aria-label="X">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.9 2H22l-6.7 7.7L23 22h-6.2l-4.8-5.9L6.7 22H2.9l7.2-8.3L1 2h6.3l4.4 5.4L18.9 2Zm-1.1 18h1.7L7.3 4H5.5l12.3 16Z"/>
+      </svg>
+    </a>
+    <a href="https://medium.com/@sangamjha" target="_blank" rel="noreferrer" aria-label="Medium">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 6.2a1.2 1.2 0 0 1 1.9-1l6.2 4.3 6.2-4.3a1.2 1.2 0 0 1 1.9 1v11.6a1.2 1.2 0 0 1-1.9 1l-6.2-4.3-6.2 4.3a1.2 1.2 0 0 1-1.9-1Z"/>
+      </svg>
+    </a>
+    <a href="mailto:info@sangamjha.com.np" aria-label="Email">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.5l10 6.5 10-6.5V6H2Zm20 12V8.7l-9.4 6.1a1 1 0 0 1-1.2 0L2 8.7V18h20Z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Now Streaming</p>
+        <h1>I’m Sangam Jha</h1>
+        <p class="subhead">Computer Engineering Student</p>
+        <p class="lead">
+          I’m a Computer Engineering student passionate about software development, data science,
+          and AI. I love building practical, high-impact solutions and collaborating with teams to
+          ship real products.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="assets/Sangam_Jha_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <a class="btn ghost" href="resume.html">View Resume</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/sangamjha" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn ghost" href="https://www.github.com/sangamjha1" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Biratnagar, Nepal</span>
+          <span>B.Tech CSE • PDEU</span>
+          <span>AI + Full-Stack</span>
+          <span>Cyber Security</span>
+        </div>
+      </div>
+      <div class="hero-poster reveal">
+        <div class="hero-photo">
+          <video id="avatar-video" autoplay muted loop playsinline>
+            <source src="assets/sangam-avatar-green.mp4" type="video/mp4" />
+          </video>
+          <canvas id="avatar-canvas" aria-label="Sangam 3D avatar"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="now-playing">
+      <div class="row-header">
+        <h2>Now Playing</h2>
+      </div>
+      <div class="now-playing">
+        <div>
+          <p class="now-title">Building real-world engineering systems</p>
+          <p class="muted">Currently focused on AI fundamentals, full-stack web apps, and practical IoT solutions that solve everyday problems.</p>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>Computer Vision</span>
+            <span>APIs</span>
+          </div>
+        </div>
+        <div class="now-card">
+          <p class="eyebrow">Studio Notes</p>
+          <h3>Rapid learner, team-first builder</h3>
+          <p>I enjoy collaborating, shipping fast iterations, and turning ideas into working software.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="projects">
+      <div class="row-header">
+        <h2>Top Picks</h2>
+        <div class="row-controls">
+          <button class="icon-btn" data-scroll="left" aria-label="Scroll left">‹</button>
+          <button class="icon-btn" data-scroll="right" aria-label="Scroll right">›</button>
+        </div>
+      </div>
+      <div class="card-track" data-track>
+        <article class="card" data-project data-title="Fire Alarm Detection System" data-description="Smart IoT camera-scanning fire detection system built with Python to detect hazards early and trigger alerts." data-tech="Python, IoT, Computer Vision" data-role="Computer Vision + IoT" data-highlights="Real-time smoke/heat detection;Sensor-driven alert pipeline;Python-based prototype" data-repo="https://github.com/sangamjha1/fire-alarm-detection" data-live="">
+          <div class="card-art top-crop">
+            <img src="assets/fire-alarm-detection-system-thumbnail.jpg" alt="Fire Alarm Detection System thumbnail" />
+          </div>
+          <div class="card-label">IoT / Safety</div>
+          <h3>Fire Alarm Detection System</h3>
+          <p>Smart IoT camera-scanning fire detection system built with Python.</p>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>IoT</span>
+            <span>Computer Vision</span>
+          </div>
+          <div class="card-links">
+            <button class="text-btn" data-open>View Details</button>
+          </div>
+        </article>
+        <article class="card" data-project data-title="Spam Detection Model" data-description="ML classifier that detects spam/ham emails using text patterns and metadata." data-tech="Python, ML, NLP" data-role="ML Engineer" data-highlights="Text preprocessing pipeline;Spam/ham classification model;Precision-focused evaluation" data-repo="https://github.com/sangamjha1/spam_dection" data-live="">
+          <div class="card-art">
+            <img src="assets/Spam-detection-thumbnail.jpg" alt="Spam Detection Model thumbnail" />
+          </div>
+          <div class="card-label">Machine Learning</div>
+          <h3>Spam Detection Model</h3>
+          <p>ML classifier that detects spam/ham emails using text patterns and metadata.</p>
+          <div class="tag-row">
+            <span>ML</span>
+            <span>Python</span>
+            <span>NLP</span>
+          </div>
+          <div class="card-links">
+            <button class="text-btn" data-open>View Details</button>
+          </div>
+        </article>
+        <article class="card" data-project data-title="Weather App" data-description="Real-time weather app showing temperature, wind, and multi-location forecasts." data-tech="JavaScript, APIs, Web" data-role="Frontend + API Integration" data-highlights="Live forecasts with API;Multi-city search;Deployed on Vercel" data-repo="https://github.com/sangamjha1/Weather-app" data-live="https://mausam-forecast.vercel.app/">
+          <div class="card-art">
+            <img src="assets/weather-app-thumbnail.png" alt="Weather App thumbnail" />
+          </div>
+          <div class="card-label">Web App</div>
+          <h3>Weather App</h3>
+          <p>Real-time weather app showing temperature, wind, and multi-location forecasts.</p>
+          <div class="tag-row">
+            <span>JavaScript</span>
+            <span>APIs</span>
+            <span>Web</span>
+          </div>
+          <div class="card-links">
+            <button class="text-btn" data-open>View Details</button>
+          </div>
+        </article>
+        <article class="card" data-project data-title="Hospital Management System" data-description="Hospital management system for managing patient records, appointments, and administrative workflows." data-tech="Web, Database, CRUD" data-role="Full-Stack Builder" data-highlights="Patient records & scheduling;Admin dashboard flows;CRUD operations" data-repo="https://github.com/sangamjha1/Hospital-Management-System" data-live="">
+          <div class="card-art top-crop">
+            <img src="assets/hospital-management-system-thumbnail.jpg" alt="Hospital Management System thumbnail" />
+          </div>
+          <div class="card-label">Full-Stack</div>
+          <h3>Hospital Management System</h3>
+          <p>Hospital system to manage patient records, appointments, and staff workflows.</p>
+          <div class="tag-row">
+            <span>Web</span>
+            <span>Database</span>
+            <span>CRUD</span>
+          </div>
+          <div class="card-links">
+            <button class="text-btn" data-open>View Details</button>
+          </div>
+        </article>
+        <article class="card" data-project data-title="Event Management Platform" data-description="Event management platform to coordinate schedules, attendees, and event logistics in one place." data-tech="Web, Scheduling, CRUD" data-role="Product Builder" data-highlights="Event scheduling flows;Attendee management;Admin control panel" data-repo="https://github.com/sangamjha1/EventManagement" data-live="">
+          <div class="card-art top-crop">
+            <img src="assets/Event-mangement-thumbnail.jpg" alt="Event Management Platform thumbnail" />
+          </div>
+          <div class="card-label">Management</div>
+          <h3>Event Management Platform</h3>
+          <p>Organize events, manage attendees, and streamline logistics.</p>
+          <div class="tag-row">
+            <span>Web</span>
+            <span>Scheduling</span>
+            <span>CRUD</span>
+          </div>
+          <div class="card-links">
+            <button class="text-btn" data-open>View Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="row reveal" id="continue">
+      <div class="row-header">
+        <h2>Continue Watching</h2>
+      </div>
+      <div class="continue-grid">
+        <div class="continue-card">
+          <h3>AI Fundamentals</h3>
+          <p>Hands-on experiments with ML models, NLP pipelines, and model evaluation.</p>
+        </div>
+        <div class="continue-card">
+          <h3>Full-Stack Foundations</h3>
+          <p>Building responsive, production-ready interfaces and backend integrations.</p>
+        </div>
+        <div class="continue-card">
+          <h3>IoT Safety Systems</h3>
+          <p>Exploring sensor networks, alerts, and smarter safety automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="about">
+      <div class="row-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="split">
+        <div>
+          <p>
+            Hi, I’m Sangam Jha, a Computer Engineering student with a deep passion for technology
+            and innovation. My current focus is cybersecurity, while I continue exploring software
+            development, data science, and AI.
+          </p>
+          <p class="muted">
+            I’m a fast learner who thrives on challenges and values meaningful connections with
+            like-minded tech enthusiasts. I’m committed to making the most of every opportunity and
+            preparing for a dynamic future in the tech industry.
+          </p>
+          <blockquote>
+            “I believe in the power of persistence and curiosity. Every challenge I face is a chance
+            to grow, and every step I take brings me closer to transforming ideas into impactful
+            solutions.”
+          </blockquote>
+        </div>
+        <div class="learn-strip">
+          <p class="learn-title">Now Learning</p>
+          <div class="learn-items">
+            <span>Network Security Fundamentals</span>
+            <span>OWASP Top 10</span>
+            <span>Linux Security & Hardening</span>
+            <span>CTF Practice</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="row reveal" id="skills">
+      <div class="row-header">
+        <h2>Skill Matrix</h2>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI & Data</button>
+        <button class="filter-btn" data-filter="core">Core Concepts</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="professional">Professional</button>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill="programming">
+          <h3>Programming</h3>
+          <p>Python, C, C++</p>
+        </div>
+        <div class="skill-card" data-skill="web">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, Full-Stack Foundations</p>
+        </div>
+        <div class="skill-card" data-skill="ai">
+          <h3>AI & Data</h3>
+          <p>Data Science, AI Fundamentals, ML Classification</p>
+        </div>
+        <div class="skill-card" data-skill="core">
+          <h3>Core Concepts</h3>
+          <p>Data Structures & Algorithms, APIs</p>
+        </div>
+        <div class="skill-card" data-skill="tools">
+          <h3>Tools</h3>
+          <p>Git, Project Management, Report Writing</p>
+        </div>
+        <div class="skill-card" data-skill="professional">
+          <h3>Professional</h3>
+          <p>Leadership, Communication, Volunteering, Problem Solving</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="education">
+      <div class="row-header">
+        <h2>Education Timeline</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>B.Tech in Computer Engineering</h3>
+          <p>Pandit Deendayal Energy University, Gandhinagar, India</p>
+          <span>July 2024 – Present</span>
+        </div>
+        <div class="timeline-item">
+          <h3>Higher Secondary (+2 Science)</h3>
+          <p>Arniko Awasiya Secondary School, Biratnagar, Nepal</p>
+          <span>2022 – 2024 • GPA: 3.50/4.0</span>
+        </div>
+        <div class="timeline-item">
+          <h3>Secondary Education (NEB 10th Board)</h3>
+          <p>Godawari Secondary English School, Biratnagar, Nepal</p>
+          <span>2010 – 2022 • GPA: 3.45/4.0</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="experience">
+      <div class="row-header">
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Graphic Designer — CSE Newsletter, PDEU</h3>
+          <p>Designed visual assets and layouts for the department newsletter and student communications.</p>
+          <span>Joined 2025 • Gandhinagar, India</span>
+        </div>
+        <div class="timeline-item">
+          <h3>R&amp;D Staff (Intern) — Sangita Paints Pvt. Ltd</h3>
+          <p>Supported product testing and technical research. Contributed to innovation in material development.</p>
+          <span>Aug 2023 – Jul 2024 • Biratnagar, Nepal</span>
+        </div>
+        <div class="timeline-item">
+          <h3>Joint Secretary — Interact Club of Arniko College</h3>
+          <p>Led tech initiatives and student-led events. Coordinated workshops and volunteering programs.</p>
+          <span>May 2022 – Jul 2024 • Biratnagar, Nepal</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="certifications">
+      <div class="row-header">
+        <h2>Certifications & Hackathons</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <p class="cert-title">Certifications</p>
+          <ul class="cert-list">
+            <li>
+              <span>Data Science & AI Bootcamp — ISMT (UoS)</span>
+              <a class="cert-link" href="assets/Data_Science.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+            <li>
+              <span>JavaScript Bootcamp — HP Tech</span>
+              <a class="cert-link" href="assets/Javascript.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+            <li>
+              <span>Full Stack Development — The Byte Brains</span>
+              <a class="cert-link" href="assets/Full_Stack.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+            <li>
+              <span>Digital Marketing — Virinchi College (Asia e-University)</span>
+              <a class="cert-link" href="assets/Digital_Marketing.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cert-card">
+          <p class="cert-title">Hackathons and Volunteering</p>
+          <ul class="cert-list">
+            <li>
+              <span>DAIICT Hackout'25</span>
+              <a class="cert-link" href="assets/Hackout%20Hackathon.jpg" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+            <li>
+              <span>Tic Tac Toe Hackathon 2025</span>
+              <a class="cert-link" href="assets/Tic%20Tac%20Toe%20hackathon'25.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+            <li>
+              <span>Higher Education Expo — ING Skill Academy</span>
+              <a class="cert-link" href="assets/ING_Skill_Academy.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+            <li>
+              <span>Civic and Social Service Internship</span>
+              <a class="cert-link" href="assets/CSSI%20Internship.png" target="_blank" rel="noreferrer">View Credential</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="languages">
+      <div class="row-header">
+        <h2>Languages</h2>
+      </div>
+      <div class="language-card">
+        <p class="cert-title">Language Proficiency</p>
+        <div class="lang-row">
+          <div class="lang-label">
+            <span>English</span>
+            <span class="lang-level">Professional</span>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-label">
+            <span>Hindi</span>
+            <span class="lang-level">Professional</span>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width: 82%;"></div>
+          </div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-label">
+            <span>Nepali</span>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width: 99%;"></div>
+          </div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-label">
+            <span>Maithili</span>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width: 99%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row reveal" id="contact">
+      <div class="row-header">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-card">
+        <p>Thank you for visiting my site! Let’s connect and build something amazing together.</p>
+        <div class="contact-info">
+          <a class="btn primary" href="mailto:info@sangamjha.com.np">info@sangamjha.com.np</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/sangamjha" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.github.com/sangamjha1" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/sangamjha.1" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://x.com/sangamjha_1" target="_blank" rel="noreferrer">X</a>
+          <a href="https://medium.com/@sangamjha" target="_blank" rel="noreferrer">Medium</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>✨Made with ❤️ by Sangam Jha | © 2024 Sangam Jha. All rights reserved.</p>
+  </footer>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <p class="modal-label">Project Spotlight</p>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-description">Project description</p>
+      <p class="modal-role" id="modal-role">Role</p>
+      <div class="modal-highlights" id="modal-highlights"></div>
+      <div class="tag-row" id="modal-tech"></div>
+      <div class="modal-links" id="modal-links"></div>
+    </div>
+  </div>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

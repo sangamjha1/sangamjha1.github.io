@@ -25,7 +25,7 @@
     </nav>
     <div class="nav-actions">
       <a class="cta" href="assets/Sangam_Jha_Resume.pdf" target="_blank" rel="noreferrer">Download</a>
-      <a class="btn ghost" id="back-home" href="index.html?noload=1#home">← Back</a>
+      <a class="btn ghost" id="back-home" href="index.html#home">← Back</a>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2024 Sangam Jha. All rights reserved.</p>
+    <p>© 2026 Sangam Jha. All rights reserved.</p>
   </footer>
 
   <script>
@@ -65,7 +65,8 @@
     if (backHome) {
       backHome.addEventListener('click', (event) => {
         event.preventDefault();
-        window.location.href = 'index.html?noload=1#home';
+        sessionStorage.setItem('skipLoader', '1');
+        window.location.href = 'index.html#home';
       });
     }
   </script>

@@ -48,9 +48,10 @@ window.addEventListener("scroll", onScroll, { passive: true });
 window.addEventListener("load", onScroll);
 
 if (loader) {
-  const skipLoader = window.location.search.includes("noload=1");
+  const skipLoader = sessionStorage.getItem("skipLoader") === "1";
   if (skipLoader) {
     loader.classList.add("hidden");
+    sessionStorage.removeItem("skipLoader");
   } else {
     window.addEventListener("load", () => {
       setTimeout(() => {
